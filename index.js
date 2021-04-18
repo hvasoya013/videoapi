@@ -9,8 +9,8 @@ mongoose.connect("mongodb+srv://Data:Data2345@cluster0.1mdei.mongodb.net/Student
         app.use("/api", route);
         app.use(bodyParser.urlencoded({ extended: true }));
         app.use(express.json());
-        app.listen(process.env.PORT || 3000, () => {
-            console.log("Server Started...!!!");
+        app.listen(process.env.PORT, () => {
+            console.log("Server Started on 3000 !!");
         });
     }
 );
